@@ -1,0 +1,49 @@
+18-04-18
+
+Tiempo de compilación: Momento en que se creaejecución
+Tiempo de Ejecución: Momento que se resulve durante la ejecución
+
+
+Operadores lógicos:
+
+1 - TRUE
+0 - FALSE
+
+No se puede asignar a un case del switch una variable porque la condición la evalua en tiempos de compilación. Por Ej.:
+
+-----------------------
+int a=0;
+
+switch ()
+    
+    case a:     ;       ¡NO!
+        break;
+
+-----------------------    
+
+Operador Ternario
+
+Expresión lógica ? valor1 : valor2
+
+    if (a>10)
+
+        b=5;
+    else
+        b=3;
+
+    Equivale a:
+    
+    b=(a>10)?5:3;
+            (si es el valor es verdadero, b toma el valor 5):(si es el valor es falso, b toma el valor 3)
+
+Tipo de datos
+
+char    (2 bytes)
+int     (4 bytes)
+float   (8 bytes)
+
+scanf() ¡no limita la cantidad de datos ingresados!
+
+
+
+
