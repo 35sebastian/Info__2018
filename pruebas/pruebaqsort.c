@@ -23,11 +23,11 @@ int main (int argc, char ** agcv){
 	const char *nombres[] = {"walter","nicolas","pablo","roberto","mariano","tomas","pedro","manuel","pablo","ariel"};
 	int cantNombres;
 
-	cantNombres = sizeof(nombres) / sizeof(char *);
+	cantNombres = sizeof(nombres) / sizeof(char *);		// como funciona Bien este sizeof (char *), no lo toma siempre como 8 bytes?
 
-	imprimir(nombres,cantNombres);
+	imprimir(nombres,cantNombres);										// La función recibe como parámetros los nombres y la cantidad de ellos
 
-    qsort(nombres, cantNombres, sizeof(char *), comparador);
+    qsort(nombres, cantNombres, sizeof(char *), comparador);	// Quick sort recibe como parámetro: los nombres, las cantidades, el largo del tipo dato, la función comparador(puntero a función))
 
 	imprimir(nombres,cantNombres);
 
