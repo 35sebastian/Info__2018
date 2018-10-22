@@ -51,3 +51,26 @@ int main (int argc, char ** argv){
 	return 0;
 
 	}
+/*
+➜  pruebas git:(branch_example) ✗ ./Prueba_ordena_qsort
+
+0 - 83
+1 - 86
+2 - 77
+3 - 15
+4 - 93
+5 - 35
+6 - 86
+7 - 92
+
+Despues de qsort
+
+0 - 15
+1 - 35
+2 - 77
+3 - 83
+4 - 86
+5 - 86
+6 - 92
+7 - 93
+*/
