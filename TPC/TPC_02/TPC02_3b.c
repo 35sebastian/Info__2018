@@ -2,7 +2,7 @@
 #include <stdio.h>
 #define COLOR "\n el color seleccionado es el :"
 
-int color_opc(int color)
+int color_opc_switch(int color)
 {
 	printf(COLOR"\t");
 

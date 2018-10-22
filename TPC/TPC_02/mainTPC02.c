@@ -68,7 +68,7 @@ int main ()
 				printf("\n Seleccione un color:\n \t 1 - Azul \n \t 2 - Verde claro \n \t 3 - Verde oscuro \n \t 4 - Celeste \n \t 5 - Amarillo \n \t 6 - Naranja \n \t 7 - Rojo \n \t 8 – Marrón \n \t Otro – Blanco \n");
 				scanf("%d",&color);
 				getchar();
-				case 1:	color_opc_else (color);
+				case 1:	color_opc_elseif (color);
 							break;
 			}
 	}

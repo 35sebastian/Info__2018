@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #define COLOR "\n el color seleccionado es el :"
 
-int color_opc(int color){
+int color_opc_array(int color){
 
 	char *vec[]= {"Blanco","Azul","Verde claro","Verde oscuro","Celeste", "Amarillo", "Naranja", "Rojo", "Marrón", "Blanco"};
 
