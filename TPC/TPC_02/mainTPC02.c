@@ -68,11 +68,20 @@ int main ()
 			getchar();
 
 			switch(subn){
-					case 1:	color_opc_elseif (color);
-					break;
+					case 1:	{
+							color_opc_elseif (color);
+							break;
+							}
 
-					//case 2:color_opc_switch (color);
-					//break;
+					case 2:{
+							color_opc_switch (color);
+							break;
+							}
+
+					case 3:{
+							color_opc_array (color);
+							break;
+							}
 					}
 				}
 			}

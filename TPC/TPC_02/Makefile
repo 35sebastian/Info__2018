@@ -1,4 +1,4 @@
-OBJS=  mainTPC02.o TPC02_1a.o TPC02_1b.o TPC02_2.o TPC02_3a.o
+OBJS=  mainTPC02.o TPC02_1a.o TPC02_1b.o TPC02_2.o TPC02_3a.o TPC02_3b.o TPC02_3c.o
 
 CFLAGS= -g -Wall
 
@@ -16,6 +16,10 @@ TPC02_1b.o: TPC02_1b.c TPC02.h
 TPC02_2.o: TPC02_2.c TPC02.h
 
 TPC02_3a.o: TPC02_3a.c TPC02.h
+
+TPC02_3b.o: TPC02_3b.c TPC02.h
+
+TPC02_3c.o: TPC02_3c.c TPC02.h
 #este es un comentario
 clean:
 	rm -f TPC02 $(OBJS)
