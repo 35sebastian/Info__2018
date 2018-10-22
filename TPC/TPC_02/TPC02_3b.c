@@ -5,7 +5,7 @@
 int color_opc(int color)
 {
 	printf(COLOR"\t");
-	
+
 switch( color )
 	{
 	case 1: printf("Azul \n");
@@ -27,8 +27,7 @@ switch( color )
 	default: printf("Blanco \n");
 			break;
 	}
-			
-			
+
+
 	return 0;
 }
-

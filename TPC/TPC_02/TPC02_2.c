@@ -9,10 +9,10 @@
 
 int cmp (int a, int b,int c)
 {
-    int flag=0;							// Utilizo flag para avisarme si pudo realizar la función cmp 
-    
+    int flag=0;							// Utilizo flag para avisarme si pudo realizar la función cmp
+
     if(a>0 && b>0 && c>0){
-        printf(NOTA1);					
+        printf(NOTA1);
         flag=1;
 		}
 		if(a<0 && b<0 && c<0){
@@ -29,6 +29,6 @@ int cmp (int a, int b,int c)
 					}
 					if(flag==0){
 						printf(NOTA5);
-						}	
+						}
         return 0;
 }
