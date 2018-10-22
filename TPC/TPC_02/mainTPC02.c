@@ -20,7 +20,7 @@
 
 int main ()
 {
-	int x,y, z,opc,color;
+	int x,y, z,opc,color,subn;
 	char sub;
 
     printf("\n¿Qué ejercicio quiere consultar?:");
@@ -61,17 +61,21 @@ int main ()
 			printf("\n¿Qué ejercicio quiere consultar?:");
 			printf( "\n\t 1. Con else-if \n\t 2. Con switch-case\n\t 3. Array\n\n");
 			getchar();
-			scanf("%d",&opc);
+			scanf("%d",&subn);
+			getchar();
+			printf("\n Seleccione un color:\n \t 1 - Azul \n \t 2 - Verde claro \n \t 3 - Verde oscuro \n \t 4 - Celeste \n \t 5 - Amarillo \n \t 6 - Naranja \n \t 7 - Rojo \n \t 8 – Marrón \n \t Otro – Blanco \n");
+			scanf("%d",&color);
 			getchar();
 
-			sitch(opc){
-				printf("\n Seleccione un color:\n \t 1 - Azul \n \t 2 - Verde claro \n \t 3 - Verde oscuro \n \t 4 - Celeste \n \t 5 - Amarillo \n \t 6 - Naranja \n \t 7 - Rojo \n \t 8 – Marrón \n \t Otro – Blanco \n");
-				scanf("%d",&color);
-				getchar();
-				case 1:	color_opc_elseif (color);
-							break;
+			switch(subn){
+					case 1:	color_opc_elseif (color);
+					break;
+
+					//case 2:color_opc_switch (color);
+					//break;
+					}
+				}
 			}
-	}
 /*
 	 if(opc==3)							// Selecionada la opción Imprime array
     {
