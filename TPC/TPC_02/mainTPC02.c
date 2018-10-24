@@ -101,7 +101,7 @@ int main ()
 			int arr[]={25,78,19,63,25,41,78,52,44,33,0,45,0,85,-1};
 			int t= sizeof(arr)/ sizeof(int);
 
-		if(sub==a){
+		if(sub=='a'){
 			switch (subn) {
 				case 1:	func_arr_w (arr);
 								break;
@@ -111,7 +111,7 @@ int main ()
 								break;
 							}
 			}
-		if(sub==b){
+		if(sub=='b'){
 			switch (subn) {
 				case 1:	func_arr_w (arr+10);
 								break;
