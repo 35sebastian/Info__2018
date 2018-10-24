@@ -11,4 +11,6 @@ int cmp (int , int ,int );
 int color_opc_elseif (int);
 int color_opc_switch (int);
 int color_opc_array (int);
-int func_arr (int arr[]);
+int func_arr_w (int * arr);
+int func_arr_f (int * arr);
+int func_arr_dw (int * arr);

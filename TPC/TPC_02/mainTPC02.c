@@ -27,14 +27,14 @@ int main ()
 		printf( "\n\t 1. compara numero \n\t 2. Color\n\t 3. Array\n\n");
     scanf("%d",&opc);
 
-    switch(opc){
+  switch(opc){
 		case 1:{
-		printf("Señeccione una opción:");
-		printf("\n - a. compara dos números");
-		printf("\n - b. compara tres números\n");
-		getchar();				//toma el retorno de carro que queda en el stdin a causa del primer scanf
-		scanf("%c", &sub);
-		getchar();
+			printf("Seleccione una opción:");
+			printf("\n - a. compara dos números");
+			printf("\n - b. compara tres números\n");
+			getchar();				//toma el retorno de carro que queda en el stdin a causa del primer scanf
+			scanf("%c", &sub);
+			getchar();
 
 			if(sub=='a'){
 				printf("\nIngrese el primer valor:");
@@ -42,7 +42,7 @@ int main ()
 				printf("\nIngrese el segundo valor:");
 				scanf("%d",&y);
 				compara (x,y);
-//				compara_ternario (x,y);
+				/*compara_ternario (x,y);*/
 			}else if(sub=='b'){
 				printf("\nIngrese el primer valor:");
 				scanf("%d",&x);
@@ -55,10 +55,10 @@ int main ()
 				printf("\nEl valor ingresado no es una opción válida\n");
 				return 0;
 				}
-		}break;
-
+				break;
+		}
 		case 2:{
-			printf("\n¿Qué ejercicio quiere consultar?:");
+			printf("Seleccione una opción:");
 			printf( "\n\t 1. Con else-if \n\t 2. Con switch-case\n\t 3. Array\n\n");
 			getchar();
 			scanf("%d",&subn);
@@ -83,17 +83,47 @@ int main ()
 							break;
 							}
 					}
+					break;
 				}
-			}
-/*
-	 if(opc==3)							// Selecionada la opción Imprime array
-    {
-		int arr[]={25,78,19,63,25,41,78,52,44,33,0,45,0,85,-1};
-		int t= sizeof(arr)/ sizeof(int);
+		case 3:{
+			printf("Seleccione una opción:");
+			printf( "\n\t 1. Con while \n\t 2. Con for\n\t 3. do-while\n\n");
+			getchar();
+			scanf("%d",&subn);
+			getchar();
+			printf("Seleccione una opción:");
+			printf("\n - a. Ingresar a la funcion con arr");
+			printf("\n - b. Ingresar a la funcion con arr +10 \n");
+			getchar();				//toma el retorno de carro que queda en el stdin a causa del primer scanf
+			scanf("%c", &sub);
+			getchar();
 
-		func_arr (arr);
-		func_arr (arr+10);
-	}*/
+			int arr[]={25,78,19,63,25,41,78,52,44,33,0,45,0,85,-1};
+			int t= sizeof(arr)/ sizeof(int);
+
+		if(sub==a){
+			switch (subn) {
+				case 1:	func_arr_w (arr);
+								break;
+				case 2:	func_arr_f (arr);
+								break;
+				case 3:	func_arr_dw (arr);
+								break;
+							}
+			}
+		if(sub==b){
+			switch (subn) {
+				case 1:	func_arr_w (arr+10);
+								break;
+				case 2:	func_arr_f (arr+10);
+								break;
+				case 3:	func_arr_dw (arr+10);
+								break;
+							}
+			}
+
+		}
+	}
     return 0;
 
 }
