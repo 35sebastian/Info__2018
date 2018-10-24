@@ -86,44 +86,39 @@ int main ()
 					break;
 				}
 		case 3:{
+				int arr[]={25,78,19,63,25,41,78,52,44,33,0,45,0,85,-1};
+
 			printf("Seleccione una opción:");
 			printf( "\n\t 1. Con while \n\t 2. Con for\n\t 3. do-while\n\n");
-			getchar();
 			scanf("%d",&subn);
 			getchar();
 			printf("Seleccione una opción:");
 			printf("\n - a. Ingresar a la funcion con arr");
 			printf("\n - b. Ingresar a la funcion con arr +10 \n");
-			getchar();				//toma el retorno de carro que queda en el stdin a causa del primer scanf
 			scanf("%c", &sub);
 			getchar();
 
-			int arr[]={25,78,19,63,25,41,78,52,44,33,0,45,0,85,-1};
-			int t= sizeof(arr)/ sizeof(int);
-
 		if(sub=='a'){
 			switch (subn) {
-				case 1:	func_arr_w (arr);
-								break;
-				case 2:	func_arr_f (arr);
-								break;
-				case 3:	func_arr_dw (arr);
-								break;
+				case 1:	{func_arr_w (arr);
+								break;}
+				case 2:	{func_arr_f (arr);
+								break;}
+				case 3:	{func_arr_dw (arr);
+								break;}
 							}
 			}
 		if(sub=='b'){
 			switch (subn) {
-				case 1:	func_arr_w (arr+10);
-								break;
-				case 2:	func_arr_f (arr+10);
-								break;
-				case 3:	func_arr_dw (arr+10);
-								break;
-							}
+				case 1:	{func_arr_w (arr+10);
+								break;}
+				case 2:	{func_arr_f (arr+10);
+								break;}
+				case 3:	{func_arr_dw (arr+10);
+								break;}
+				}
 			}
-
 		}
 	}
-    return 0;
-
+	return 0;
 }

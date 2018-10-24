@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 
-int func_arr_f(int arr[]){
+int func_arr_f(int * arr){
 
 	int i;
 
