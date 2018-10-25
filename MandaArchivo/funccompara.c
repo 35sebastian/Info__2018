@@ -7,5 +7,4 @@ char compara (char * cadena){
 for (z=0;cont!=0; z )
 
   return cadena;
-
 }
