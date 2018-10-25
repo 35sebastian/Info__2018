@@ -14,7 +14,7 @@ while(1){
     printf("%d -- %d\n ", getppid(), i++);
       sleep (1);
     }
-  if(mh==0 && i<10){
+  if(mh==0){
     wait(&mh);
     printf("me morì %d -- %d\n ", getpid(), i);
 
