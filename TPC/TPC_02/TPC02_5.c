@@ -3,8 +3,6 @@
 #include <stdlib.h>
 
 
-
-
 int func_arr_break_cont(int arr*)
 {
 	int i=0;

@@ -1,19 +1,16 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #define COLOR "\n el color seleccionado es el :"
 
-int color_opc(int color)
-{
-	
-	int vec[]= {0xAzul,0xVerdeClaro,0xVerdeoscuro,0xCeleste, 0xAmarillo, 0xNaranja, 0xRojo, 0xMarrón, 0xBlanco};
-	
-		if (color<=8 && color>=0)
+int color_opc_array(int color){
+
+	char *vec[]= {"Blanco","Azul","Verde claro","Verde oscuro","Celeste", "Amarillo", "Naranja", "Rojo", "Marrón", "Blanco"};
+
+		if (color<=9 && color>=0)
 		{
-		printf("%d", vec[color]);
+		printf(COLOR "%s", vec[color]);
 				}else
-				printf("%d", vec[8]);
-	
+				printf("%s", vec[9]);
+
 	return 0;
 }
-
