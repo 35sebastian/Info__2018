@@ -2,9 +2,6 @@
 #include <stdio.h>
 #include "cabeceras.h"
 
-//int xtr_len (const char *);
-
-
 int main()
 {
 	int i;
