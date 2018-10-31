@@ -118,19 +118,20 @@ int main (){
 				}
 			}
 		}
-	/*	case 4:{
+		case 4:{
 			printf("Seleccione una opción:");
 			printf( "\n\t 1. elementos y posicion en el string \n\t 2. elementos ordenados por impresion\n\n");
 			getchar();
 			scanf("%d",&subn);
 			getchar();
 			switch (subn) {
-				case 1:	func_arr_break_cont(arr);
-								break;
-			case 2:	func_arr_break_cont_ord(arr);
+					case 1:	func_arr_break_cont(arr);
+									break;
+					//case 2:	func_arr_break_cont_ord(arr);
 
 				//default: break;
-			}*/
+			}
+		}
 	}
 	return 0;
 }
