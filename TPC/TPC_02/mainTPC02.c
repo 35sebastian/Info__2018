@@ -17,14 +17,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "TPC02.h"
+#define MAX 15
 
-int main ()
-{
+int main (){
 	int x,y, z,opc,color,subn;
 	char sub;
+	int arr[MAX]={25,78,19,63,25,41,78,52,44,33,0,45,0,85,-1};
 
     printf("\n¿Qué ejercicio quiere consultar?:");
-		printf( "\n\t 1. compara numero \n\t 2. Color\n\t 3. Array\n\n");
+		printf( "\n\t 1. compara numero \n\t 2. Color\n\t 3. Array\n\t 4. Array_orden\n\n");
     scanf("%d",&opc);
 
   switch(opc){
@@ -86,8 +87,6 @@ int main ()
 					break;
 				}
 		case 3:{
-				int arr[]={25,78,19,63,25,41,78,52,44,33,0,45,0,85,-1};
-
 			printf("Seleccione una opción:");
 			printf( "\n\t 1. Con while \n\t 2. Con for\n\t 3. do-while\n\n");
 			scanf("%d",&subn);
@@ -119,6 +118,19 @@ int main ()
 				}
 			}
 		}
+	/*	case 4:{
+			printf("Seleccione una opción:");
+			printf( "\n\t 1. elementos y posicion en el string \n\t 2. elementos ordenados por impresion\n\n");
+			getchar();
+			scanf("%d",&subn);
+			getchar();
+			switch (subn) {
+				case 1:	func_arr_break_cont(arr);
+								break;
+			case 2:	func_arr_break_cont_ord(arr);
+
+				//default: break;
+			}*/
 	}
 	return 0;
 }
