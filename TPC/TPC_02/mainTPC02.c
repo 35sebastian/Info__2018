@@ -109,14 +109,14 @@ int main (){
 			}
 		if(sub=='b'){
 			switch (subn) {
-				case 1:	{func_arr_w (arr+10);
-								break;}
-				case 2:	{func_arr_f (arr+10);
-								break;}
-				case 3:	{func_arr_dw (arr+10);
-								break;}
+				case 1:	func_arr_w (arr+10);
+								break;
+				case 2:	func_arr_f (arr+10);
+								break;
+				case 3:	func_arr_dw (arr+10);
+								break;
 				}
-			}
+			}break;
 		}
 		case 4:{
 			printf("Seleccione una opción:");
@@ -127,10 +127,9 @@ int main (){
 			switch (subn) {
 					case 1:	func_arr_break_cont(arr);
 									break;
-					//case 2:	func_arr_break_cont_ord(arr);
-
-				//default: break;
-			}
+					case 2:	func_arr_break_cont_ord(arr);
+									break;
+			}break;								//corresponde al case 4
 		}
 	}
 	return 0;
