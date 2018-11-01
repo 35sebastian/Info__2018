@@ -1,28 +1,23 @@
+/*
+Realice una función que reciba un string y convierta todos sus caracteres a mayúscula, a minúscula o que cada palabra inicie con mayúscula y continúe con minúscula.
+	char * xtr_chg_case (char *, int);
+*/
 #include <string.h>
 #include <stdio.h>
 #include <ctype.h>
-//int xtr_len (const char *);
-//int xtr_qtty (const char *, char);
-char * xtr_chg_case (char *, int);
+#include "cabecera.h"
 
-int main()
-{
+int main(){
 	char string[20] ="HolaQueTal";
 	//int a;
-	
+
 	int opcion;
-	
+
 	printf ("ingrese una opcion: \n 1)Todo mayusculas \n 2)Todo minusculas \n 3)Empice con mayuscula y siga con minusculas \n\n");
 	scanf("%d", &opcion);
-	
-	//const char string[20]="Holaquetal";
-	//xtr_len (string);
-	//a= 'f';
-	//xtr_qtty (string, a);
-	//opcion=1;
+	getchar();														//absorbe el caracter que queda en el Buffer stdin
+
 	xtr_chg_case (string, opcion);
-	//printf("\n El resultado es:% \n", );
-	
+
 	return 0;
 }
-
