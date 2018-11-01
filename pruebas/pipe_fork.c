@@ -21,15 +21,15 @@ int n;
 pid_t p_id;
 
 
-	if (pipe(pfds) == -1) 
+	if (pipe(pfds) == -1)
 	{
 		perror("pipe");
 		exit(1);
 	}
 
 	printf ("\n ---- START ---- \n");
-	
-	
+
+
     if ((p_id=fork ())<0)
     {
         perror ("\n **** Error Fatal **** \n");
@@ -39,7 +39,11 @@ pid_t p_id;
 	if (p_id)
 	{
 		ign_signal(SIGCHLD);
-		
+	/*	while (1){
+			printf("leyendo...");
+				}
+*/
+
 		printf ("\n ---- PADRE - Reader ---- ");
 
 		printf("P RD - fd[0]: %d\n", pfds[0]);
@@ -57,7 +61,7 @@ pid_t p_id;
 	{
 //		sleep(5);
 		printf ("\n ---- HIJO - Writer --- ");
-		
+
 		printf("H WR - text: %s\n", sx);
 		write(pfds[1], sx, strlen (sx)+1);
 #if 0
@@ -65,16 +69,16 @@ pid_t p_id;
 		n=read(pfds[0], sBuf, 20);
 		sBuf[n]=0;
 		printf("H RD - read %d bytes [%s]\n",n, sBuf);
-#endif 
+#endif
 		printf ("H WR* \n ---- Fin del HIJO ---- ");
 
 	}
-	
+
 	close (pfds[0]);
 	close (pfds[1]);
-	
-	
-return 0;    
+
+
+return 0;
 }
 
 void ign_signal (int sig)
