@@ -2,7 +2,7 @@
 Realice una función que reciba un string y convierta todos sus caracteres a mayúscula, a minúscula o que cada palabra inicie con mayúscula y continúe con minúscula.
 	char * xtr_chg_case (char *, int);
 */
-#include <string.h>
+
 #include <stdio.h>
 #include <ctype.h>
 #include "cabecera.h"
@@ -19,5 +19,6 @@ int main(){
 
 	xtr_chg_case (string, opcion);
 
+	printf("\n" );
 	return 0;
 }
