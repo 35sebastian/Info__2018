@@ -9,7 +9,7 @@ int main(){
 	const char str02[MAX]="HolaqueTal";
 	int resul, opc;
 
-	printf ("ingrese la opcion \n0.CaseSensitive \n1.No CaseSensitive\n");
+	printf ("ingrese la opcion \n0.NO CaseSensitive \n1.CaseSensitive\n");
 	scanf("%d",&opc);
   getchar();
 
