@@ -11,7 +11,7 @@ int xtr_cmp (const char * str01, const char * str02, int opc){
     scanf ("%d", &cant);
     fflush(stdin);
 
-    for (i = 0, j = 0; str01[i]!='\0' && str02[j]!='\0'; i++, j++) {
+    for (i = 0, j = 0; str01[i]!='\0' && str02[j]!='\0' && i <=cant && j <= cant; i++, j++) {
       if (opc)  parcial=toupper(str01[i])-toupper(str02[j]);
         else parcial=str01[i]-str02[j];
 
