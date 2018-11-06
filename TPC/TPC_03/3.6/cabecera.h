@@ -2,4 +2,4 @@
 #include <stdlib.h>
 #include <string.h>
 
-char *xtrxtr(const char *, const char *);
+char *xtrcpy( char *, const char *, int);

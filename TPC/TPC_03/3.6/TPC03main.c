@@ -5,18 +5,19 @@
 #define MAX 20
 
 int main(){
-	const char str01[MAX]="HolaQueTal";
-	const char str02[MAX]="HolaqueTal";
-	int resul, opc;
+	char str01[MAX]="HolaQueTal";
+	const char str02[MAX]="Cómoestás";
+	int  opc;
+	//char resul[MAX]="\0";
 
-	printf ("ingrese la opcion \n0.NO CaseSensitive \n1.CaseSensitive\n");
+	printf ("ingrese la opcion \n\t0.Cantidad de caracteres a copiar (debe ser menor a 20) \n\t1.Copiatodo\n");
 	scanf("%d",&opc);
   getchar();
 
-	resul= xtr_cmp (str01, str02, opc);
+	//resul= xtrcpy (str01, str02, opc);
 
-	if (resul ==0) printf("\nlos strings son iguales\n");
-	       else printf("\nlos strings son distintos y su relacion es: %d\n", resul);
+	/*if (resul)*/ printf("\nEl string fué copiado exitosamente: %s \n",xtrcpy (str01, str02, opc));
+	       printf("\nEl string no pudo ser copiado %d\n");
 
 	return 0;
 }
