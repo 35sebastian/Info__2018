@@ -21,17 +21,17 @@ char * xtr_chg_case (char * string, int opcion){
 	char c;
 
 	switch(opcion){
-			case 1:{
+			case 1:{																	//En este caso muetra todo en mayúsculas
 						while (string[i]){
-							c=string[i];
-						if  (islower(c)) c=toupper(c);
-						putchar (c);
+							c=string[i];											//Recorre el string letra por letra
+								if  (islower(c)) c=toupper(c);	//controla si esa letra es minúscula
+							putchar (c);
 							i++;
 						}
 				break;
 			}
 			case 2:{
-							while (string[i]){
+							while (string[i]){								//En este caso muetra todo en minúscula
 								c=string[i];
 							if (isupper(c)) c=tolower(c);
 							putchar (c);
@@ -41,7 +41,7 @@ char * xtr_chg_case (char * string, int opcion){
 			}
 
 			case 3:{
-							while (string[i]){
+							while (string[i]){								//Solo imprime el primer caracter en mayúscula
 								if (i==0){
 										if(string[i]>=97 && string[i]<=122)	c=string[i]-32;
 											else	c=string[i];
@@ -54,5 +54,6 @@ char * xtr_chg_case (char * string, int opcion){
 										i++;
 									}
 				}
-	return 0;
+			}
+	return string;
 }
