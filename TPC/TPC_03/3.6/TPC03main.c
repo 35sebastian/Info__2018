@@ -17,7 +17,7 @@ int main(){
 	//resul= xtrcpy (str01, str02, opc);
 
 	/*if (resul)*/ printf("\nEl string fué copiado exitosamente: %s \n",xtrcpy (str01, str02, opc));
-	       printf("\nEl string no pudo ser copiado %d\n");
+	       printf("\nEl string no pudo ser copiado\n");
 
 	return 0;
 }

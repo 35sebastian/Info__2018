@@ -10,7 +10,7 @@ char *xtrcpy  (char * str01, const char * str02, int opc){
       for(k=0;str02[k]!='\0';k++);
         k++;
 
-    if (!opc){
+    if (!opc){  //Evalua si la copia tiene que ser parcial, en ese caso cumple el if. Caso distinto de cero hara la copia completa de str02
       printf("ingrese la cantidad de caracteres a copiar, max lenght del string %d(debe ser menor a 20):", k);
       scanf ("%d", &cant);
       getchar();
