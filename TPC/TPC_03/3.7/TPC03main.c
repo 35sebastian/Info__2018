@@ -6,17 +6,13 @@
 
 int main(){
 	char str01[MAX]="HolaQueTal";
-	const char str02[MAX]="Cómoestás";
+	const char c='a';
 	int  opc;
-	//char resul[MAX]="\0";
+	char *resul=NULL;
 
-	printf ("ingrese la opcion \n\t0.Cantidad de caracteres a copiar (debe ser menor a 20) \n\t1.Copiatodo\n");
-	scanf("%d",&opc);
-  getchar();
+		resul= xtrrchr(str01, c);
 
-	//resul= xtrcpy (str01, str02, opc);
-
-	/*if (resul)*/ printf("\nEl string fué copiado exitosamente: %s \n",xtrcpy (str01, str02, opc));
+	if (resul) printf("\nEl string fué copiado exitosamente: %p \n",	resul);
 	       printf("\nEl string no pudo ser copiado\n");
 
 	return 0;

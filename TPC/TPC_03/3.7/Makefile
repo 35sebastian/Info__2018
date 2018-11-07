@@ -1,4 +1,4 @@
-OBJS=  TPC03main.o  TPC03_7o
+OBJS=  TPC03main.o  TPC03_7.o
 
 FLAGS= -g -Wall
 

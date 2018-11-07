@@ -14,19 +14,19 @@ char *xtrcpy  (char * str01, const char * str02, int opc){
       printf("ingrese la cantidad de caracteres a copiar, max lenght del string %d(debe ser menor a 20):", k);
       scanf ("%d", &cant);
       getchar();
-      if(cant<MAX){
-        for (i = 0, j = 0; str01[i]!='\0'; i++, j++) {
-            else if(j==cant) str01[i]=str02[j];
-            if (j<cant) str01[i]=str02[j];
-            putchar(str01[i]);
+      if(cant<MAX){       //no va a poder desbordar str01
+        for (i = 0, j = 0; str01[i]!='\0'; i++, j++) {    //recorre
+            if (j<cant) str01[i]=str02[j];                //copia
+              else if(j==cant) str01[i]=str02[j];         //copia \0
+            //putchar(str01[i]);                            // para controlar la función de copia parcial
             }
+            return str01;
         }
-    }else if(k<MAX){
-      for (i = 0, j = 0; str01[i]!='\0'; i++, j++) {
-        if (j<cant) str01[i]=str02[j];
-          else if(j==cant) str01[i]=str02[j];
-
+    }else if(opc==1 && k<MAX){        // me aseguro que el string a copiar sea menor que el de destino
+      for (i = 0, j = 0; str01[i]!='\0'; i++, j++) {    //recorro
+        if (j!='\0' && j<MAX) str01[i]=str02[j];                  //copio
+          else if(j=='\0') str01[i]=str02[j];           //copio \0
         }
+        return str01;
       }
-    return str01;
   }

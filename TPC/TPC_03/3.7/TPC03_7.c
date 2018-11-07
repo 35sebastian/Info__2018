@@ -28,5 +28,5 @@ char *xtrrchr(const char *str, int c){
 
         }
       }*/
-    return str01;
+    return str;
   }
