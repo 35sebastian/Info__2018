@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #define MAX 20
 
-char *xtrcpy  (char * str01, const char * str02, int opc){
+char *xtrrchr(const char *str, int c){
 
-      int cant,i,j,k;
+    /*  int cant,i,j,k;
 
       for(k=0;str02[k]!='\0';k++);
         k++;
@@ -16,8 +16,8 @@ char *xtrcpy  (char * str01, const char * str02, int opc){
       getchar();
       if(cant<MAX){
         for (i = 0, j = 0; str01[i]!='\0'; i++, j++) {
+        if (j<cant) str01[i]=str02[j];
             else if(j==cant) str01[i]=str02[j];
-            if (j<cant) str01[i]=str02[j];
             putchar(str01[i]);
             }
         }
@@ -27,6 +27,6 @@ char *xtrcpy  (char * str01, const char * str02, int opc){
           else if(j==cant) str01[i]=str02[j];
 
         }
-      }
+      }*/
     return str01;
   }
