@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "cabecera.h"
 #define MAX 20
-/*Tengo que corregir este main*/
+
 int main(){
 	char str01[MAX]="HolaQueTal";
 	const char str02[MAX]="Cómoestás";
