@@ -1,0 +1,35 @@
+
+> Ejemplos de púnteros a funciones
+
+Combo pnt_fnc_x.c -  ejemplo con las funciones básicas:suma, resta, division y multiplicación.
+
+pnt_fnc_1.c: presentación sencilla de puntero a función.
+
+pnt_fnc_2.c: Incluye el ejemplo 3 del ppt. Array de paf y paf como argumento.
+
+pnt_fnc_3.c: Eliminado
+
+-------------------------------
+
+Se agrega guera del combo el archivo pnt_fnc_4
+pnt_fnc_4.c: Ejemplo de Array de ptr a funcion.
+
+===============================================================
+
+> Ejemplos de PaF con PaF como argumento en el ordenamiento de Arrays.
+
+paf_ord_1.c:Ordenamiento de Arrays de char y float con la misma funcion.
+
+paf_ord_2.c: Ordenamiento de Array de Strings. El objetivo es ver como armar la funcion  de comparacion.
+
+
+paf_ord_3.c: Ordenamiento de Array de estructuras. Cantidad de elementos definido por N (5000)-
+Prototipo de la función ordena identico al del qsort - (ver diferencias de tiempo entre ambas funciones)
+
+
+paf_ord_3.c: 
+
+paf_ord_4.c: 
+
+
+
