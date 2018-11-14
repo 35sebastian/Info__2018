@@ -11,7 +11,7 @@ int main(){
 
 		resul= xtrrchr(str01, c);
 
-	if (resul) printf("\nEl caracter tiene su primer coincidencia en la dirección: %p \n",	resul);
+	if (resul) printf("\nEl caracter tiene su última coincidencia en la dirección: %p \n",	resul);
 			else printf("\n El caracter no se encuentra en el string\n");
 	return 0;
 }
