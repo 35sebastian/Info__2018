@@ -1,4 +1,4 @@
-OBJS=  TPC03main.o  TPC03_8.o
+OBJS=  TPC03main.o  TPC03_9.o
 
 FLAGS= -g -Wall
 
@@ -11,7 +11,7 @@ TPC03: $(OBJS)
 
 TPC03main.o: TPC03main.c cabecera.h
 
-TPC03_8.o: TPC03_8.c cabecera.h
+TPC03_9.o: TPC03_9.c cabecera.h
 
 clean:
 	rm -f $(OBJS) TPC03
