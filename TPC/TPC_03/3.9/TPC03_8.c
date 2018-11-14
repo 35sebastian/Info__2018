@@ -11,7 +11,8 @@ char *xtrrchr(const char *str, char c){
           //printf("%p \n\n", &str[i+2]);  //Lo uso para corroborar que la posición de memoria devuelta sea la última.
           if (str[i]=='\0'){
           while (i){
-            if (c==str[i]) return &str[i];
+          if (c==str[i]) return &str[i];
+
           i--;
             }
           }
