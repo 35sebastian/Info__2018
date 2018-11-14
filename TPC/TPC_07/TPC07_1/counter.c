@@ -3,9 +3,11 @@
 #include <signal.h>
 #include <unistd.h>
 #include <sys/types.h>
+#include <string.h>
 
-void contador(int){
+void contador(int cont){
 
     	printf ("Sumando\n");
-    	count++;
+    	cont++;
+      
 }

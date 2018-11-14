@@ -11,9 +11,9 @@ main: $(OBJS)
 
 main.o: main.c header.h
 
-counter.o: counter.c cabecera.h
+counter.o: counter.c header.h
 
-imprime.o: imprime.c cabecera.h
+imprime.o: imprime.c header.h
 
 clean:
 	rm -f $(OBJS) main

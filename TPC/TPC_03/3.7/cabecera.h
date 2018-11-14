@@ -2,4 +2,4 @@
 #include <stdlib.h>
 #include <string.h>
 
-char *xtrrchr(const char *, int );
+char *xtrchr(const char *, char );

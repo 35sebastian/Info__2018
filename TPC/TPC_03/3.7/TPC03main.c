@@ -7,13 +7,11 @@
 int main(){
 	char str01[MAX]="HolaQueTal";
 	const char c='a';
-	int  opc;
-	char *resul=NULL;
+		char *resul=NULL;
 
-		resul= xtrrchr(str01, c);
+		resul= xtrchr(str01, c);
 
-	if (resul) printf("\nEl string fué copiado exitosamente: %p \n",	resul);
-	       printf("\nEl string no pudo ser copiado\n");
-
+	if (resul) printf("\nEl caracter tiene su primer coincidencia en la dirección: %p \n",	resul);
+			else printf("\n El caracter no se encuentra en el string\n");
 	return 0;
 }

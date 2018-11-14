@@ -3,6 +3,7 @@
 #include <signal.h>
 #include <unistd.h>
 #include <sys/types.h>
+#include <string.h>
 
 void imprimir();
-void contador();
+void contador(int);
