@@ -5,27 +5,27 @@
 
 char *xtrxtr(const char *str01, const char *str02){
 
-  int dif;
-  int i,j;
+       int i=-1;
+       char *apuntador,*cad,*cad1;
 
-  /*  for (i = 0; str01[i]!='\0'; i++)         //Recorro ambos vectores para controlar su length
-      printf("\nLa dirección de str01[%d] es: %p \n", i, &str02[i]);
-    for (j = 0; str02[j]!='\0'; j++)
-      printf("\nLa dirección de str02[%d] es: %p \n", j, &str02[j]);
-*/
-        if (i<j){
-          printf("\n\t No se puede realizar la busqueda porque el string a buscar es más grande que el objetivo \n");
-          return NULL;}
+       apuntador=str01;
+       cad=(char*)str01;
+       cad1=(char*)str02;
 
-          for (i = 0; str01[i]!='\0'; i++) {
-            for (j = 0; str02[j]==str01[i] && str02!=''\0'; j++) {
-              dif=str02[j]-str01[i]
-            }
-            if(str02[j]!=str01[i]) j=0;
-          }
-            if(j){
-              printf("\n El string no fué encontrado en el objetivo\n");
-              return NULL;}
-            else return &str01;
-          }
+       while(*cad){           //recorro el objetivo
+
+        if(*cad1==*cad) i=0;    //si coinciden pongo i=0
+            else cad++;         // sino paso al siguiente
+
+       while(i>=0){             //mientras haya coincidencia
+            *(apuntador+i)=*cad;  //desplazo el apuntador al comienzo de la coincidencia
+            i++;                  //desplazo al siguiente caracter al apuntador
+            cad++;                // paso al siguiente elemento a comparar
+          if(*cad=='\0'){         //si se termino el string pongo al final del pujntero el \0
+              *(apuntador+i)='\0';
+              return apuntador;   //se retorna el comienzo de la cadena coincidente
+              }
+        }
+    }
+      return NULL;
 }
