@@ -7,6 +7,5 @@
 
 void imprimir (){
 
-      printf ("Hice mi trabajo y bien hecho. Entonces me voy!\n");
       exit(1);
 }
