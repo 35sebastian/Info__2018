@@ -26,14 +26,14 @@ int main (){
 
     printf("\n¿Qué ejercicio quiere consultar?:");
 		printf( "\n\t 1. compara numero \n\t 2. Color\n\t 3. Array\n\t 4. Array_orden\n\n");
-    scanf("%d",&opc);
+    scanf("%d[^\n]",&opc);
 
   switch(opc){
 		case 1:{
 			printf("Seleccione una opción:");
 			printf("\n - a. compara dos números");
 			printf("\n - b. compara tres números\n");
-			getchar();				//toma el retorno de carro que queda en el stdin a causa del primer scanf
+			//getchar();				//toma el retorno de carro que queda en el stdin a causa del primer scanf
 			scanf("%c", &sub);
 			getchar();
 
