@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void suma (int a, int b, int * r);
+void suma (int, int, int *);
 
 int main (){
 
@@ -8,16 +8,17 @@ int main (){
     int y = 20;
     int * z = 0;
 
-
+  //  z = &x;
   //  scanf("%d %d", &x, &y);
+
     suma (x, y, &z);
-    printf("La suma de los numeros es: %d, se encuentra en %p", *z, z);
+    printf("El valor de x es: %d, el valor de y es: %d. La suma de los numeros es: %d, se encuentra en %p", x, y, * z, &z);
+
   return 0;
 }
 
-void suma (int a, int b, int * r){
+void suma (int a, int b, int * p){
 
-  * r = a + b;
-
+   * p = a + b;
   return;
 }
