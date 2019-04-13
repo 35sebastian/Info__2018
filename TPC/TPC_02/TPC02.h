@@ -14,3 +14,5 @@ int color_opc_array (int);
 int func_arr_w (int * arr);
 int func_arr_f (int * arr);
 int func_arr_dw (int * arr);
+int func_arr_break_cont(int * arr);
+int func_arr_break_cont_ord(int * arr);
