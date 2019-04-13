@@ -13,6 +13,6 @@ int main(){
 		resul= xtrxtr(str01, str02);
 
 	if (resul) printf("\nEl caracter tiene su última coincidencia en la dirección: %p \n",	resul);
-			
+			else printf("\nNo se pudo realizar la comparación\n");
 	return 0;
 }
