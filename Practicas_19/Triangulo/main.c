@@ -7,7 +7,7 @@
 
 int main(int argc, char const *argv[]) {
 
-  int ladoA, ladoB, ladoC, resultado=1;
+  int ladoA, ladoB, ladoC, resultado=1, rect=0, tipo=0;
 
     /*Ingreso de datos*/
   printf("ingrese los lados de un triángulo\n");
@@ -19,20 +19,32 @@ int main(int argc, char const *argv[]) {
   scanf("%d",&ladoB);
 
     /*Llamados a funciones*/
-    while(resultado==1){
-    resultado = valores_positivos (ladoA,ladoB,ladoC);        //comprueba que los valores ingresados sean mayores que cero
 
-    resultado = es_triangulo (ladoA,ladoB,ladoC);             //comprueba que los valores ingresados correspondan a un triángulo
+    while(resultado==1){                                      //Este while será la condición que determine si los valores ingresados son válidos o no.
+    resultado = valores_positivos (ladoA,ladoB,ladoC);        //comprueba que los valores ingresados sean mayores que cero.
+
+    resultado = es_triangulo (ladoA,ladoB,ladoC);             //comprueba que los valores ingresados correspondan a un triángulo.
 
     resultado=0;
     }
-    if (resultado==0) {
-      rect = es_rectangulo (ladoA,ladoB,ladoC);            //comprueba que el triángulo definido es rectángulo
+    if (resultado==0) {                                       //Si los valores ingresados son correctos solo queda el clasificar que tipo de triángulo es.
 
-      tipo = tipo_triangulo (ladoA,ladoB,ladoC);           //determina que tipo de triángulo es el ingresado (Equilatero, isoceles, escaleno)
+      rect = es_rectangulo (ladoA,ladoB,ladoC);               //comprueba que el triángulo definido es rectángulo.
+      if (rect==1) printf("El triángulo es rectangulo\n");
+         else if (rect==-1) printf("El triángulo no es rectángulo\n");
+
+      tipo = tipo_triangulo (ladoA,ladoB,ladoC);              //determina que tipo de triángulo es el ingresado (Equilatero, isoceles, escaleno).
+          switch (tipo) {
+            case 1: printf("El triangulo es equilatero\n");
+                    break;
+          case 1: printf("El triangulo es isoceles\n");
+                    break;
+          default: printf("El triángulo es escaleno\n", );
+          }
     }
 
-    switch (resultado) {                                      //Este switch se utilizará para determinar el error en los datos ingresados
+
+    switch (resultado) {                                      //Este switch se utilizará para imprimir en pantalla los mensajes de error según los datos ingresados.
       case -1:
           printf("¡alguno de los valores ingresados es negativo o cero!\n");
           break;
@@ -40,6 +52,8 @@ int main(int argc, char const *argv[]) {
           printf("¡Los valores ingresados no forman un triángulo!\n");
           break;
     }
+
+
 
   return 0;
 }
