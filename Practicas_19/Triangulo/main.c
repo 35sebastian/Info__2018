@@ -1,6 +1,7 @@
 /*este main está referido al programa Triangulo, el cual solicita el ingreso de los lados de un triángulo y determina si fué ingrsado correctamente*/
 
 #include <stdio.h>
+#include <math.h>
 #define EQUILATERO 1
 #define ISOCELES 2
 #define ESCALENO 3
@@ -28,7 +29,6 @@ int main(int argc, char const *argv[]) {
     resultado=0;
     }
     if (resultado==0) {                                       //Si los valores ingresados son correctos solo queda el clasificar que tipo de triángulo es.
-
       rect = es_rectangulo (ladoA,ladoB,ladoC);               //comprueba que el triángulo definido es rectángulo.
       if (rect==1) printf("El triángulo es rectangulo\n");
          else if (rect==-1) printf("El triángulo no es rectángulo\n");
@@ -37,12 +37,11 @@ int main(int argc, char const *argv[]) {
           switch (tipo) {
             case 1: printf("El triangulo es equilatero\n");
                     break;
-          case 1: printf("El triangulo es isoceles\n");
+            case 2: printf("El triangulo es isoceles\n");
                     break;
-          default: printf("El triángulo es escaleno\n", );
+            default: printf("El triángulo es escaleno\n", );
           }
     }
-
 
     switch (resultado) {                                      //Este switch se utilizará para imprimir en pantalla los mensajes de error según los datos ingresados.
       case -1:
@@ -52,8 +51,6 @@ int main(int argc, char const *argv[]) {
           printf("¡Los valores ingresados no forman un triángulo!\n");
           break;
     }
-
-
 
   return 0;
 }
