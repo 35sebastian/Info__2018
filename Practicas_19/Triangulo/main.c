@@ -12,6 +12,7 @@ int main(int argc, char const *argv[]) {
   int ladoA, ladoB, ladoC, resultado=1, rect=0, tipo=0;
 
     /*Ingreso de datos*/
+
   printf("ingrese los lados de un triángulo\n");
   printf("\t Ingrese la longitud del primer lado:");
   scanf("%d",&ladoA);
@@ -20,7 +21,7 @@ int main(int argc, char const *argv[]) {
   printf("\t Ingrese la longitud del tercer lado:");
   scanf("%d",&ladoC);
 
-    /*Llamados a funciones*/
+    /*Llamados a funciones para obtener sus respuestas*/
 
     while(resultado==1){                                      //Este while será la condición que determine si los valores ingresados son válidos o no.
     resultado = valores_positivos (ladoA,ladoB,ladoC);        //comprueba que los valores ingresados sean mayores que cero.
