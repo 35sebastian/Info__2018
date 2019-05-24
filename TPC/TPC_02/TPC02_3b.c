@@ -2,10 +2,10 @@
 #include <stdio.h>
 #define COLOR "\n el color seleccionado es el :"
 
-int color_opc(int color)
+int color_opc_switch(int color)
 {
 	printf(COLOR"\t");
-	
+
 switch( color )
 	{
 	case 1: printf("Azul \n");
@@ -27,8 +27,7 @@ switch( color )
 	default: printf("Blanco \n");
 			break;
 	}
-			
-			
+
+
 	return 0;
 }
-

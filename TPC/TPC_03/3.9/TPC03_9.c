@@ -39,6 +39,7 @@ char * xtrxtr(const char *str01, const char *str02){
                     *(apuntador)='\0';
               return apuntador;                                                 //se retorna el comienzo de la cadena coincidente
             }
+<<<<<<< HEAD
 =======
 char *xtrxtr(const char *str01, const char *str02){
 
@@ -63,6 +64,8 @@ char *xtrxtr(const char *str01, const char *str02){
               return apuntador;   //se retorna el comienzo de la cadena coincidente
               }
         }
+=======
+>>>>>>> 432052cbc4c9e54dc6a0df477d428fdd4a3b8b7f
     }
       return NULL;
 }

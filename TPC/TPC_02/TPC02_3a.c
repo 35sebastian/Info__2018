@@ -2,7 +2,7 @@
 #include <stdio.h>
 #define COLOR "\n el color seleccionado es el :"
 
-int color_opc(int color)
+int color_opc_elseif(int color)
 {
 	if (color==1){
 	printf(COLOR "\t Azul\n");
@@ -31,7 +31,6 @@ int color_opc(int color)
 	if (color>=9 || color<=0){
 	printf(COLOR "\t Blanco\n");
 		}
-						
+
 	return 0;
 }
-

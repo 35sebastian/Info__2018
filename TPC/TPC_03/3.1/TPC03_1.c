@@ -14,7 +14,7 @@
 int xtr_len (const char * string){
 
 	int i;
-	int a;
+	char a;
 
 	for(i=0; i<20; i++){
 			a=string[i];
