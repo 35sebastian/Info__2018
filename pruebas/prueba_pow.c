@@ -1,3 +1,9 @@
+/*
+
+Este programa de una funcion para calcular la distancia entre un punto y el origen de coordenadas
+
+*/
+
 #include <stdio.h>
 #include <math.h>
 
