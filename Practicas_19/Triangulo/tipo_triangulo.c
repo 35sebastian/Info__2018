@@ -6,9 +6,9 @@
 
 int tipo_triangulo(int a, int b, int c){
 
-  if(a==b==c)
+  if((a==b) && (b==c))
     return EQUILATERO;
-  else if(a!=b!=c)
+  else if((a!=b) && (a!=c) && (c!=b))
     return ESCALENO;
 
   return ISOCELES;

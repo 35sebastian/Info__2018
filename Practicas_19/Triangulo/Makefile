@@ -1,13 +1,13 @@
 OBJS=  main.o valores_positivos.o es_triangulo.o es_rectangulo.o tipo_triangulo.o
 
-CFLAGS= -g -lm -Wall
+CFLAGS= -g -Wall
 
 all: main
 
 	@echo 'Se ha creado main para ejecutar anteponer "./"'
 
 main: $(OBJS)
-		gcc -o main $(OBJS)
+		gcc -o main $(OBJS) -lm
 
 main.o: main.c header.h
 

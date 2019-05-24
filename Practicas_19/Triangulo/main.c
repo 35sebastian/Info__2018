@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include "header.h"
 #define EQUILATERO 1
 #define ISOCELES 2
 #define ESCALENO 3
@@ -17,7 +18,7 @@ int main(int argc, char const *argv[]) {
   printf("\t Ingrese la longitud del segundo lado:");
   scanf("%d",&ladoB);
   printf("\t Ingrese la longitud del tercer lado:");
-  scanf("%d",&ladoB);
+  scanf("%d",&ladoC);
 
     /*Llamados a funciones*/
 
@@ -39,7 +40,7 @@ int main(int argc, char const *argv[]) {
                     break;
             case 2: printf("El triangulo es isoceles\n");
                     break;
-            default: printf("El triángulo es escaleno\n", );
+            default: printf("El triángulo es escaleno\n");
           }
     }
 
