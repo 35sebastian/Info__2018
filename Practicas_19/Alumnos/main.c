@@ -23,3 +23,7 @@ int int main(int argc, char const *argv[]) {
   }
   return 0;
 }
+
+
+//voy a tener que hacer un registro de (vec) + (vec) + (int), apuntar al comienzo de la pricipio de la primer cadena y despla-
+//zarme de a lenghts de esos tres elementos para poder comparar los caracteres y ordenar los bloques por sus lenghts
