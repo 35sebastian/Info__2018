@@ -1,3 +1,9 @@
+// // Escriba un programa el cual reciba los nombres, apellidos y calificaciones de hasta 20 alumnos.
+// // El ingreso de alumnos finaliza cuando se ingresa como nombre 0. Cada nombre puede tener como máximo 20 caracteres.
+// // al finalizar el ingreso, el programa debe presentar en forma ordenada decreciente a los alumnos con sus respectivos promedios.
+// // verifique errores de ingreso.
+
+
 #include<stdio.h>
 
 int int main(int argc, char const *argv[]) {
