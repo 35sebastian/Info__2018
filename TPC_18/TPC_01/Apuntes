@@ -15,11 +15,11 @@ No se puede asignar a un case del switch una variable porque la condición la ev
 int a=0;
 
 switch ()
-    
-    case a:     ;       ¡NO!
+
+    case a:
         break;
 
------------------------    
+-----------------------
 
 Operador Ternario
 
@@ -32,7 +32,7 @@ Expresión lógica ? valor1 : valor2
         b=3;
 
     Equivale a:
-    
+
     b=(a>10)?5:3;
             (si es el valor es verdadero, b toma el valor 5):(si es el valor es falso, b toma el valor 3)
 
@@ -43,7 +43,3 @@ int     (4 bytes)
 float   (8 bytes)
 
 scanf() ¡no limita la cantidad de datos ingresados!
-
-
-
-
