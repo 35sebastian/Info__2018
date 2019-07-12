@@ -1,0 +1,19 @@
+Estimados, a continuación la consigna vista en clase.
+
+Escriba un programa el cual imprima una serie deseada en funcion de los argumentos recibidos.
+en caso de no especificarse algun switch, el primer argumento será la cantidad de elementos y la serie por defecto sera la de fibonacci.
+
+el programa deberá imprimir todos los valores en formato CSV por pantalla.
+es necesario verificar todos los errores posibles de ingreso y/o ejecucion.
+
+el switch "-c" permitirá cambiar la cantidad de elementos.
+el switch "-s" permitirá especificar el tipo de serie deseada.
+Los valores posibles serán:
+"FIB": Fibonacci
+"POT": el cual debera estar acompañado a continuación de la base de la serie de potencias
+"FACT": el cual estará acompañado a continuación del numero del cual se quiere calcular el factorial
+"PRIM": números primos
+
+el switch "-m" permitirá acceder al programa en modo "menu"; mediante el cual se debe permitir al usuario ejecutar el programa en modo continuo.
+
+el switch "-sep" permitirá elegir el separador elegido para el CSV. por defecto se considera ";"
